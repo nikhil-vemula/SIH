@@ -6,13 +6,32 @@
     tools:context="com.jasmine.vsnick.sih.AnalysisFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <android.support.v7.widget.CardView
+    <LinearLayout
+        android:orientation="vertical"
+        android:weightSum="2"
         android:layout_width="match_parent"
-        android:layout_height="300dp">
+        android:layout_height="match_parent">
+    <android.support.v7.widget.CardView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
         <com.github.mikephil.charting.charts.PieChart
             android:id="@+id/piechart"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
     </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/barchart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </com.github.mikephil.charting.charts.BarChart>
+
+    </android.support.v7.widget.CardView>
+    </LinearLayout>
 
 </FrameLayout>

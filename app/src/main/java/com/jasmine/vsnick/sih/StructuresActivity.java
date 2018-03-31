@@ -45,7 +45,7 @@ public class StructuresActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                Snackbar.make(view, "Water level will be added", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
         });
@@ -101,6 +101,14 @@ public class StructuresActivity extends AppCompatActivity {
 
             }
         });
+        ImageView typeImage = findViewById(R.id.structure_img_view);
+        if(structure.getType().equals("tube-well")){
+            typeImage.setImageResource(this.getResources().getIdentifier("tubewell","drawable",this.getPackageName()));
+        }else if(structure.getType().equals("check-dam")){
+            typeImage.setImageResource(this.getResources().getIdentifier("checkdam","drawable",this.getPackageName()));
+        }else if(structure.getType().equals("percolation")){
+            typeImage.setImageResource(this.getResources().getIdentifier("percolation","drawable",this.getPackageName()));
+        }
 
     }
 

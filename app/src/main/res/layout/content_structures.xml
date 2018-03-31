@@ -13,17 +13,15 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
     <ImageView
-        android:layout_weight="1"
-        android:src="@drawable/tubewell"
+        android:scaleType="fitXY"
         android:layout_margin="10dp"
         android:id="@+id/structure_img_view"
         android:layout_width="match_parent"
-        android:layout_height="0dp" />
+        android:layout_height="150dp" />
     <android.support.v7.widget.CardView
-        android:layout_weight="1"
         android:layout_margin="10dp"
         android:layout_width="match_parent"
-        android:layout_height="0dp">
+        android:layout_height="100dp">
         <LinearLayout
             android:orientation="horizontal"
             android:weightSum="2"
@@ -115,18 +113,38 @@
             </LinearLayout>
         </LinearLayout>
     </android.support.v7.widget.CardView>
-
         <Button
             android:onClick="map"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="Map" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:gravity="center_horizontal"
+                android:textSize="18dp"
+                android:text="Last Checked Date"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="18dp"
+                android:gravity="center_horizontal"
+                android:text="Water Level"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
         <ListView
+            android:nestedScrollingEnabled="true"
+            android:layout_weight="1"
             android:id="@+id/water_level_list_view"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1">
+            android:layout_height="200dp">
 
         </ListView>
 

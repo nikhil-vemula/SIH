@@ -65,9 +65,9 @@ class CustomAdapter extends ArrayAdapter<Structure>{
         }
 
 
-        viewHolder.deptTextview.setText(structure.getType());
-        viewHolder.stateTextview.setText(structure.getState());
-        viewHolder.statusTextview.setText(structure.getStatus());
+        viewHolder.deptTextview.setText("Type: "+ structure.getType());
+        viewHolder.stateTextview.setText("State: "+ structure.getState());
+        viewHolder.statusTextview.setText("Status: "+structure.getStatus());
         if(structure.getType().equals("tube-well")){
             viewHolder.typeImage.setImageResource(mContext.getResources().getIdentifier("tubewell","drawable",mContext.getPackageName()));
         }else if(structure.getType().equals("check-dam")){
@@ -86,7 +86,7 @@ class CustomAdapter extends ArrayAdapter<Structure>{
         String status = structure.getStatus();
         Log.d("My Fragment",status);
         if(status.equals("on-going")){
-            viewHolder.statusTextview.setTextColor(Color.YELLOW);
+            viewHolder.statusTextview.setTextColor(Color.MAGENTA);
         }else if(status.equals("completed")){
             viewHolder.statusTextview.setTextColor(Color.GREEN);
         }else if(status.equals("proposed")){

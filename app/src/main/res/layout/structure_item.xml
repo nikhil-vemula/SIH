@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_height="100dp"
+    android:layout_height="150dp"
     android:layout_width="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cardCornerRadius="4dp"
     app:cardElevation="3dp"
-    android:padding="10dp"
+    android:padding="100dp"
     android:layout_margin="16dp">
 <LinearLayout
     android:layout_gravity="center_vertical"
@@ -13,6 +13,7 @@
     android:layout_height="match_parent">
 
     <ImageView
+        android:scaleType="fitXY"
         android:id="@+id/structure_image_view"
         android:layout_weight="1"
         android:layout_width="0dp"
@@ -23,7 +24,9 @@
         android:layout_width="0dp"
         android:layout_height="match_parent">
         <TextView
-            android:gravity="center_horizontal"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="end"
             android:textSize="24dp"
             android:id="@+id/dept_text_view"
             android:layout_weight="1"
@@ -31,7 +34,8 @@
             android:layout_width="match_parent"
             android:layout_height="0dp" />
         <TextView
-            android:gravity="center_horizontal"
+            android:layout_marginRight="10dp"
+            android:gravity="end"
             android:textSize="20dp"
             android:id="@+id/state_text_view"
             android:layout_weight="1"
@@ -39,8 +43,10 @@
             android:layout_width="match_parent"
             android:layout_height="0dp" />
         <TextView
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
             android:textSize="18dp"
-            android:gravity="center_horizontal"
+            android:gravity="end"
             android:id="@+id/status_text_view"
             android:layout_weight="1"
             android:text="Status"
