@@ -11,3 +11,8 @@ Android based app for quick access of R&D facilities, resources established by D
 * Android
 
 ## Contributors
+
+1. [MohammedAijaaz](https://github.com/MohammedAijaaz)
+2. [FarahUzma](https://github.com/FarahUzma)
+3. Sai keerthana Goli
+4. Alekhya Lingutla
